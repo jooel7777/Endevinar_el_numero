@@ -1,19 +1,18 @@
 package ad.cfp.endevina_el_nmero
 
 import ad.cfp.endevina_el_nmero.databinding.ActivityMainBinding
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : ActivityMainBinding() {
+class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -21,6 +20,7 @@ class MainActivity : ActivityMainBinding() {
             startActivity(Intent(this, Joc::class.java))
             finish()
         }
+
     }
 }
 
