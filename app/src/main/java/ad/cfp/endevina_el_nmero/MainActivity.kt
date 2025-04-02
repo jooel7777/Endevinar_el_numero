@@ -25,3 +25,4 @@ class MainActivity : Activity() {
 }
 
 private fun ActivityMainBinding.onCreate(bundle: Bundle?) {}
+wfeghrtj
